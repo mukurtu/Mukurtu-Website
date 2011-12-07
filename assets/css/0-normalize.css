@@ -1,0 +1,13 @@
+/* body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,fieldset,input,form,textarea,p */
+* { margin: 0; padding: 0; } /* Resets the default browser margins and paddings. Removed {blockquote,th,td} */
+ul, ol { list-style:none; }
+img { border: none;color:#666;font-style:italic; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; } 
+address,caption,cite,code,dfn,th,var { font-style:normal; font-weight:normal; }  
+caption,th { text-align:left; } 
+q:before,q:after { content:''; } 
+abbr,acronym { border:0; } 
+#scroll { position:absolute; top:0; bottom:-1.01px; width:1em; z-index:-1;} /* adds scrollbar when not needed so page does not jump - div should be placed at the bottom */ 

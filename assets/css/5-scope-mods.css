@@ -1,0 +1,128 @@
+#screen { background: #000 url(images/screen-bg.jpg) bottom repeat-x; border: 1px solid red }
+
+#home .button-download-now { padding: 0 0 0 10px; }
+#home .button-download-now a { display:block; width:295px; height: 47px; background: url(images/button-download-now-soon.png) no-repeat; margin-top: 15px;}
+#home .button-download-now span {position:absolute; top:-2000px;}
+
+#homepage-full-view #points h3 { font-size:120%; text-align: center; border:1px solid #ccc; margin:8px; }
+
+#inline1, #inline2, #inline3, #inline4 { width:400px; }
+
+div#fancybox-wrap {top:160px !important;;} 
+
+/*#############################################
+///////////// MAILBOX /////////////////////////////////////////////////
+############################################*/
+
+#mailbox, #mailbox-tools { width:100%; padding:0; margin:0; }
+#mailbox td { padding;0; margin: 0; }
+#mailbox .side-column, #mailbox-tools .side-column { width:15%;  }
+#mailbox .side-column li { width:100%; margin:5px 0; padding:5px 0 5px 10px; }
+#mailbox .side-column li a { color:#000; }
+#mailbox .side-column .active { background: #f4f4f4; }
+#mailbox .message-column { width:100%; background: #f4f4f4; }
+#mailbox .message-column .mail-controls { background: #e8e8e8; width:100%; height:36px; padding-top: 5px;}
+#mailbox .message-column .control-panel2 { padding: 0; margin: 0; }
+#mailbox .message-column .control-panel2 button { margin:5px; }
+#message-table { width: 100%; background: #fbfbfb; }
+#message-table td { border-bottom: 1px solid #ccc; }
+#message-table tr { background:#f5f5f5; }
+#message-table .message-list-title span { color:#999; }
+#message-table .active { color:#000; font-weight: bold; background:#fff; }
+#message-table .active a { color:#6dce35; }
+#message-table .message-list-title a:visited { font-weight: normal; color:#57ddff;}
+
+/* message page */
+
+#mailbox #message-table .profile-column { width:21%; word-wrap:break-word; }
+#mailbox #message-table .message-title { padding: 10px; font-weight: bold; }
+#mailbox #message-table .message-body { border: 1px dashed #ccc; padding:10px; }
+#mailbox #message-table .update-status { word-wrap:break-word; width:90px; }
+
+
+/*######################################################
+///////////// PRINGO NATIVES OVERRIDES /////////////////////////////////
+######################################################*/
+
+.column-full td { padding: 5px; }
+.column-full .rlabel { background-color: #EFEFEF; border-right: 1px solid #D0DEE5; }
+.column-full a:link, .column-full a:active, .column-full a:visited { }
+.column-full a:hover { color: #754200; }
+.column-full a:visited { color:;}
+.column-full input, .column-full select, .column-full textarea { border: 1px solid #CCC; color: #666; font-family: Verdana; font-size: 11px; padding: 2px; background-color: #FEFEFE; }
+.column-full #pr_extraNav a:link, .column-full #pr_extraNav a:active, .column-full #pr_extraNav a:visited { text-decoration: none; }
+.column-full fieldset { padding: 10px; }
+#pr_listGroups tr td.right { float:none }
+.pr_header { font-size: 15px; font-weight: bold; color: #5288AC; }
+.column-full p { padding: 5px 0; color: #555; }
+.column-full .pr_header, .column-full p, .column-full #pr_extraNav, .column-full .pr_formclass { margin:20px 0; }
+/* account page tab overrides */
+#pr_extraNav ul { background: url(images/gray_pix.gif) repeat-x bottom; }
+#pr_extraNav ul li a { border: 1px solid #daddcc; }
+#pr_extraNav ul li.active a { border: 1px solid #daddcc; border-bottom: 1px solid #FFFFFF; }
+
+/* form stuff */
+.pr_validate, .pr_editor_tags { font-size: 80%; }
+
+/*!
+ * jQuery UI Stars v2.1.1
+ * http://plugins.jquery.com/project/Star_Rating_widget
+ *
+ * Copyright (c) 2009 Orkan (orkans@gmail.com)
+ * Dual licensed under the MIT and GPL licenses.
+ * http://docs.jquery.com/License
+ *
+ * $Rev: 102 $
+ * $Date:: 2009-06-07 #$
+ * $Build: 32 (2009-06-12)
+ *
+ */
+.column-300 .top-display .ui-stars { margin:0 auto; width:80px; } /* center the stars in .column-300 for top-display class */
+.ui-stars-star, .ui-stars-cancel { float: left; display: block; overflow: hidden; text-indent: -999em; cursor: pointer; }
+li.ui-stars-star, li.ui-stars-cancel { width:8px; cursor:default; } /* display stars are set to li from div */
+.ui-stars-star-half { margin-left: -8px; }
+.ui-stars-star a, .ui-stars-cancel a, .ui-stars-star span, .ui-stars-cancel span { width: 16px; height: 15px; display: block; background: url(images/ui.stars.gif) no-repeat 0 0; }
+.ui-stars-star a, .ui-stars-star span { background-position: 0 -32px; }
+.ui-stars-star-on a, .ui-stars-star-on span { background-position: 0 -48px; }
+.ui-stars-star-hover a, .ui-stars-star-hover span { background-position: 0 -64px; }
+.ui-stars-cancel-hover a, .ui-stars-cancel-hover span { background-position: 0 -16px; }
+.ui-stars-star-disabled, .ui-stars-star-disabled a, .ui-stars-cancel-disabled a { cursor: default !important; }
+#ratings span { padding:0 8px; } /* adds padding to the rating hover display not so close to the stars */
+
+/* FLOWPLAYER
+-------------------------------------------------------*/
+
+/* styling of the container. */ 
+a.myPlayer { display:block; width: 953px; height:536px; text-align:center; } 
+
+/* play button */ 
+a.myPlayer img { margin-top:35px; } 
+
+/* when container is hovered we alter the border color */ 
+a.myPlayer:hover { }
+
+/*#############################################
+///////////// FancyBox /////////////////////////////////////////////////
+############################################*/
+
+.fancybox-dialog {padding:10px;width:350px;height:300px;background:#eee;}
+#reg-it.fancybox-dialog {width:800px; height:400px;}
+
+
+
+/* The bouncing box */
+
+.status-message-wrapper { margin: 0 auto; width:400px; }
+#status-message { background:url('images/box_bg.jpg') repeat-x center top #fcfcfc; height:115px; padding:30px 20px 20px 20px; margin-top:-10px; width:400px; border:2px solid #ccc; color:#494848; text-shadow:1px 1px 0 white; }
+#status-message p.alert { background:url('images/alert.png') no-repeat 10px center; padding-left:90px; }
+#status-message p.warning { background:url('images/warning.png') no-repeat 10px center; padding-left:90px; }
+#status-message p.info { background:url('images/info.png') no-repeat 10px center; padding-left:90px; }
+#status-message p.success { background:url('images/success.png') no-repeat 10px center; padding-left:90px; }
+#status-message p strong { font-size:200%; display:block; }
+#status-message { -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; }
+#status-message .red { color: red; }
+#status-message .yellow { color: #fc9600; }
+#status-message .blue { color: #2200ff; }
+#status-message .green { color: #6ecf36; }
+#status-message .control-panel { position:absolute; bottom:0;right:10px; }
+

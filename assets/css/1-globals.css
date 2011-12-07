@@ -1,0 +1,245 @@
+/*######################################################################
+///////////// GENERAL /////////////////////////////////////////////////
+#####################################################################*/
+html, body, .?wrap {  /* sticky footer */height:100%;/**/ }
+body > .?wrap {/*sticky footer*/height:auto; min-height:100%;/**/}
+body, td, div, table { font-family: "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+ font-size:small; color: #693601;
+text-shadow: #fff 0 0 0px; /* win safari font bolding bug */ }	
+* html body { f\ont-size:small; /* for other IE versions */ }
+html>body { /* be nice to Opera */ font-size:small; }
+p {padding:0 0 10px 0;}
+h1 {font-size: 120%;}
+h2 {font-size:; padding: 0;margin:0;}
+h3 {font-size:160%;}
+h4 {font-size:; padding:0 0 10px 0;}
+a { color: #31aec0; }
+a:hover, a:focus, a:active { color: #754200; }
+a:visited { color: #3bb6d7; }
+hr { border:none;border-top: solid 1px #daddcc; height:1px; margin:20px 0; }
+fieldset { border:none; }
+
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; clear:both; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+.loading {text-align:center;}
+
+/* Hide stuff without resorting to display:none; */
+.hide { visibility:hidden; width:0!important; height:0!important; line-height:0!important; padding:0!important; margin:0!important; }
+
+
+/*##############################################
+///////////// DEFINITIONS /////////////////////////////////////////////
+##############################################*/
+
+.alt { background: #EBEBEB; }	/* ALT COLOR FOR ZEBRA STRIPES */
+
+.left { float: left; }
+.right { float: right; }
+.center {text-align:center; margin:0 auto;}
+.status-toggle a { color:#bbb }
+.status-toggle a.active { color:#79a300; }
+.online {background:url(/mini/f/user.gif) no-repeat; padding-left:20px; color:#79A300; }
+.offline {color: #C66;}
+.inactive {color:#ccc;}
+.active { color:#79a300; }
+.subdue, a.subdue {color: #d49a53; font-style: italic;}
+.bold-red {color:#FF0000 !important; font-weight: bold !important;}
+.red, .pr_val_error {color:#ff0000 !important;}
+.green, a.green { color: #6dce35 }
+.big-bold-faint {font-size:200%; font-weight:bold; color:#eee;}
+.small-font {font-size:80%;}
+.black {color:#000 !important}
+.active a, a.active {color:green;}
+.word-break {word-wrap:break-word;}
+.indent { margin-left: 45px; }
+.video { padding: 5px 0 5px 0; }
+
+.mini-error { font-size: 80%; color: red }
+
+.line-separator { clear: both; border-bottom: 1px solid #eee; margin: 8px 0; /margin: 0px 0 8px 0;}
+.item-separator { clear: both; margin:20px 0 0 0 !important; border-bottom: 3px dotted #ffe3c3; height: 10px; }
+
+.padding-medium { padding: 0 10px 0 10px; overflow: hidden; }
+
+.empty { background: #f5f5f5; color: #333333; padding: 40px 0; text-align: center; }
+
+.breadcrumbs { margin: 0; padding: 5px 10px 10px 0px; list-style: none; }
+.breadcrumbs li { color:#666; display: inline; }
+.breadcrumbs li span {font-weight: normal; color:#ccc;}
+
+/*#############################################
+///////////// FORMS /////////////////////////////////////////////////
+############################################*/
+
+textarea, input { border:1px solid #ccc; }
+input { height:18px; }
+
+/* 100% width */
+.mini textarea { width:100%; }
+
+
+#register { margin:0 auto; width:600px; }
+#register fieldset { border:1px dashed #ccc; margin:20px 0; }
+#register legend { padding: 0.2em 0.5em; background: #ddd; border:1px solid #ccc; font-size:90%; }
+#register label {  display: block; width: 200px; float: left; text-align: right; margin-right:10px; }
+#register .mini-error, #register .password-meter {float:left; margin-left:210px;}
+#register li { margin:10px 0; }
+#register button { margin-left:210px; } 
+#register .password {float: left;}
+
+/* form container */
+#comments dl { width:98%; }
+
+/* comment form */
+#form_comment_comment, #pr_table_comment { width:80%; }
+/* expand the text input */
+#form_comment_comment, #pr_table_comment{width:99% !important;}
+
+/* mini comment form */
+#form_mini_comment_form_comment, #pr_table_mini_comment_form { width:80%; }
+/* expand the text input */
+#form_mini_comment_form_comment, #pr_table_mini_comment_form {width:99% !important;}
+
+/* spacing between emoticon and submit button */
+#slickbox.emoticons {padding:20px;}
+.mini-tab-center {background:#ddd; width:80px; text-align: center; margin:0 auto;}
+.mini-tab-center .subdue { color:#fff; }
+.mini-tab-center a {outline:0;}
+.mini-tab-center a:hover {text-decoration: none;}
+.pr_button {margin-top:5px;}
+
+/* poll form */
+.pr_form input[type="radio"] { margin-right:10px; vertical-align: middle; }
+
+
+/*#############################################
+///////////// BUTTONS /////////////////////////////////////////////////
+#############################################*/
+
+.button1, .button2 {white-space:nowrap;}
+
+a.button1 { line-height:32px; /* sets the height and padding of the button */
+font-size:100%;background: url(images/button1-left.png) top left no-repeat; padding: 7px 0 10px 25px; /padding: 0px 0 1px 25px; color: #542a01 !important; }
+a.button1:visited { color:; }
+a.button1 span { background: url(images/button1-right.png) top right no-repeat; padding: 7px 25px 10px 0; /padding: 7px 25px 8px 0; }
+a.button1:hover {background: url(images/button1-left.png) left -32px no-repeat;text-decoration:none;}
+a.button1:hover span { background: url(images/button1-right.png) right -32px no-repeat;}
+
+button.button1 { font-size: 100%; /width:auto; /overflow:visible; background: url(images/button1-left.png) top left no-repeat; padding: 0 0 0 20px; /padding: 0 0 0 25px; color: #FFF !important; border: 0; cursor:pointer; }
+button.button1 span { display:block; margin-top:-1px; /margin-top:-2px; height:31px; line-height:32px; background: url(images/button1-right.png) top right no-repeat; padding: 0 20px 0 0; /padding: 0 25px 0 0; position:relative; white-space:nowrap;}
+button.button1:hover {background: url(images/button1-left.png) left -32px no-repeat;text-decoration:none;}
+button.button1:hover span { background: url(images/button1-right.png) right -32px no-repeat;}
+
+.button2 {  font-size:100%; background: url(images/button2-left.jpg) left no-repeat; padding: 0 0 0 10px; /padding: 0 0 0 15px; color: #FFF !important; }
+.button2 a:visited { color: #fff; }
+.button2 span { background: url(images/button2-right.jpg) right no-repeat; padding: 0 15px 0 0; /padding: 0 15px 0 0; }
+
+.track-listing {margin:30px !important; text-align: left;}
+.track-listing td {padding:5px; background: #f4f4f4; border:1px solid #fff;}
+
+/*#######################################################
+///////////// MEDIA ICONS FOR THUMBNAILS //////////////////////////////
+#######################################################*/
+
+.type-icon {position:absolute;width:16px; height:16px;right:3px;bottom:3px; display:block;}
+.icon-pic {background: url(/mini/f/photo.gif);}
+.icon-video {background: url(/mini/f/television.gif); left:3px; right:none;bottom:3px;}
+.icon-audio {background: url(/mini/f/music.gif); left:3px; right:none;bottom:3px;}
+.media-length {position:absolute; right:3px;bottom:3px;display:block;background:#000;color:#fff;font-size:90%;padding:0 3px;}
+
+/*###############################################
+///////////// RUN ON MENU /////////////////////////////////////////////
+###############################################*/
+
+/* OLD MENU .run-on-menu a {border-right:1px solid #daddcc; padding:0 5px;}
+.run-on-menu a.last {border:none;} */
+
+.run-on-menu { width: 100%; clear: both; text-align: right; font-size:85%; }
+.run-on-menu, .run-on-menu li {text-align: left;}
+.run-on-menu li { display: block; float: left; border-right: 1px solid #ccc; padding: 0 10px;  }
+.run-on-menu li.active { font-weight: bold !important; }	
+.run-on-menu li.active a { color: #98CB00; }
+.run-on-menu li.up { padding: 0 10px 0 20px; background: url(images/arrows-sort.png) 5px 0 no-repeat; }
+.run-on-menu li.down { padding: 0 10px 0 20px; background: url(images/arrows-sort.png) 5px -15px no-repeat; }
+.run-on-menu li.last, .run-on-menu li.first { border-right: 0; }
+
+
+/*##############################################
+///////////// MENU TABS ///////////////////////////////////////////////
+##############################################*/
+
+.tabnav { height: 20px; margin: 0; white-space: nowrap; padding-left: 10px; background: url(images/gray_pix.gif) repeat-x bottom; }
+.tabnav li { margin: 0;  padding: 0; display: inline; list-style-type: none; }
+.tabnav a:link, .tabnav a:visited { float: left; background: #f3f3f3; font-size: 10px; line-height: 14px; font-weight: bold; padding: 2px 10px 2px 10px; margin-right: 4px; border: 1px solid #ccc; text-decoration: none; color: #666; }
+.tabnav a:link.active, .tabnav a:visited.active { border-bottom: 1px solid #fff; background: #fff; color: #000; }
+.tabnav a:hover { background: #fff; }
+
+
+/*############################################
+///////////// SPLITTER ////////////////////////////////////////////////
+############################################*/
+
+.splitter {  }
+.splitter ul { float:right;  }
+.splitter li { float:left }
+.splitter li a {display:block; float:left; padding:5px; margin:2px;border:1px solid #ccc; outline:3px solid #f2f2f2; color:#3BB6D7; }
+
+/*#############################################
+///////////// NOTES /////////////////////////////////////////////////
+############################################*/
+
+.note {text-align: center; background: #fff5c4; padding:10px;}
+
+/* The main calendar widget.  DIV containing a table. */
+
+div.calendar { position: relative; }
+.calendar, .calendar table { border: 1px solid #556; font-size: 11px; color: #000; cursor: default; background: #eef; font-family: tahoma, verdana, sans-serif; }
+/* Header part -- contains navigation buttons and day names. */
+
+.calendar .button { /* "<<", "<", ">", ">>" buttons have this class */ text-align: center;    /* They are the navigation buttons */ padding: 2px;          /* Make the buttons seem like they're pressing */ }
+.calendar .nav { background: #778 url(menuarrow.gif) no-repeat 100% 100%; }
+.calendar thead .title { /* This holds the current "month, year" */ font-weight: bold;      /* Pressing it will take you to the current date */ text-align: center; background: #fff; color: #000; padding: 2px; }
+.calendar thead .headrow { /* Row <TR> containing navigation buttons */ background: #778; color: #fff; }
+.calendar thead .daynames { /* Row <TR> containing the day names */ background: #bdf; }
+.calendar thead .name { /* Cells <TD> containing the day names */ border-bottom: 1px solid #556; padding: 2px; text-align: center; color: #000; }
+.calendar thead .weekend { /* How a weekend day name shows in header */ color: #a66; }
+.calendar thead .hilite { /* How do the buttons in header appear when hover */ background-color: #aaf; color: #000; border: 1px solid #04f; padding: 1px; }
+.calendar thead .active { /* Active (pressed) buttons in header */ background-color: #77c; padding: 2px 0 0 2px; }
+/* The body part -- contains all the days in month. */
+
+.calendar tbody .day { /* Cells <TD> containing month days dates */ width: 2em; color: #456; text-align: right; padding: 2px 4px 2px 2px; }
+.calendar tbody .day.othermonth { font-size: 80%; color: #bbb; }
+.calendar tbody .day.othermonth.oweekend { color: #fbb; }
+.calendar table .wn { padding: 2px 3px 2px 2px; border-right: 1px solid #000; background: #bdf; }
+.calendar tbody .rowhilite td { background: #def; }
+.calendar tbody .rowhilite td.wn { background: #eef; }
+.calendar tbody td.hilite { /* Hovered cells <TD> */ background: #def; padding: 1px 3px 1px 1px; border: 1px solid #bbb; }
+.calendar tbody td.active { /* Active (pressed) cells <TD> */ background: #cde; padding: 2px 2px 0 2px; }
+.calendar tbody td.selected { /* Cell showing today date */ font-weight: bold; border: 1px solid #000; padding: 1px 3px 1px 1px; background: #fff; color: #000; }
+.calendar tbody td.weekend { /* Cells showing weekend days */ color: #a66; }
+.calendar tbody td.today { /* Cell showing selected date */ font-weight: bold; color: #00f; }
+.calendar tbody .disabled { color: #999; }
+.calendar tbody .emptycell { /* Empty cells (the best is to hide them) */ visibility: hidden; }
+.calendar tbody .emptyrow { /* Empty row (some months need less than 6 rows) */ display: none; }
+/* The footer part -- status bar and "Close" button */
+
+.calendar tfoot .footrow { /* The <TR> in footer (only one right now) */ text-align: center; background: #556; color: #fff; }
+.calendar tfoot .ttip { /* Tooltip (status bar) cell <TD> */ background: #fff; color: #445; border-top: 1px solid #556; padding: 1px; }
+.calendar tfoot .hilite { /* Hover style for buttons in footer */ background: #aaf; border: 1px solid #04f; color: #000; padding: 1px; }
+.calendar tfoot .active { /* Active (pressed) style for buttons in footer */ background: #77c; padding: 2px 0 0 2px; }
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.calendar .combo { position: absolute; display: none; top: 0; left: 0; width: 4em; cursor: default; border: 1px solid #655; background: #def; color: #000; font-size: 90%; z-index: 100; }
+.calendar .combo .label, .calendar .combo .label-IEfix { text-align: center; padding: 1px; }
+.calendar .combo .label-IEfix { width: 4em; }
+.calendar .combo .hilite { background: #acf; }
+.calendar .combo .active { border-top: 1px solid #46a; border-bottom: 1px solid #46a; background: #eef; font-weight: bold; }
+.calendar td.time { border-top: 1px solid #000; padding: 1px 0; text-align: center; background-color: #f4f0e8; }
+.calendar td.time .hour, .calendar td.time .minute, .calendar td.time .ampm { padding: 0 3px 0 4px; border: 1px solid #889; font-weight: bold; background-color: #fff; }
+.calendar td.time .ampm { text-align: center; }
+.calendar td.time .colon { padding: 0 2px 0 3px; font-weight: bold; }
+.calendar td.time span.hilite { border-color: #000; background-color: #667; color: #fff; }
+.calendar td.time span.active { border-color: #f00; background-color: #000; color: #0f0; }

@@ -1,0 +1,90 @@
+.forum {color:#666;}
+.forum th { /* WHITE FONT */ color: #333; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color:#ddd;}
+.forum body,
+.forum div,
+.forum table,
+.forum td { font-family: Verdana, Arial, Helvetica, sans-serif; }
+.forum a { color:#82ae00; }
+.forum { border: 1px solid #ccc; overflow: hidden; /*width: 876px;*/ width: auto; padding: 1px; }
+.f-module { width:100%; }
+.f-header { height: 28px; background: #e9e9e9 url(head_bg.gif) repeat-x; border-bottom: 1px solid #ddd; }
+.f-header .thread-topics { width: 70%; }
+.f-header .post-author { width: 130px; }
+.f-folder { width: 35px; background: #f2f2f2 url(folder.gif) no-repeat 10px 5px; }
+.post-profile { width: 130px; }
+.forum table { padding: 0; margin: 0; }
+.f-title .col1,
+.f-footer { height: 28px; background: url(title_bg.gif) repeat-x; }
+.thread-body table { padding: 0; margin: 0; }
+.f-title .col2 { height: 28px; background: #fff url(title_bg.jpg) no-repeat; }
+.forum h2 a { font-size: 120%; color: #438c00; }
+.forum h2 { margin-bottom: 0; }
+.body-line { border-bottom: 1px solid #eee; border-top: 1px solid #f4f4f4;}
+.f-subject {width:500px;}
+.f-subject,
+.f-mod,
+.f-icon { background: #fff; }
+.f-icon { border-right:1px solid #f4f4f4;}
+.f-threads,
+.f-views { /* LIGHT SHADE */ background: #f2f2f2; }
+.f-posts,
+.f-last,
+.f-username { /* DARK SHADE */ background: #f8f8f8; }
+.f-subject a,
+.f-username a,
+.post-profile a { font-weight: bold; }
+.f-subject span, .f-subject span a, .f-last span, .f-last span a {font-style: italic; font-size: 90%; font-weight: normal;}
+.post-profile img { /* AVATAR V SPACING */ margin: 8px 0; }
+.thread-title { background: #f4f4f4; }
+.f-search {float:right;}
+
+.f-footer-shadow { width:100%; height:8px; background: url(drop_shadow.gif) repeat-x; }
+
+
+
+
+/*######################################################################
+///////////// SIDE DISPLAY LAYOUT ////////////////////////////////////////////////////////////////////////
+#####################################################################*/
+dl.f-side-display { display: block;  position: relative; zoom: 1;  padding: 10px 0; /padding-bottom: 20px; overflow: hidden; border:1px solid #ddd; }
+dl.f-side-display dt, f-dl.side-display dt .crop-it { position:relative; /* for type-icon */ overflow: hidden; text-align: left; float: left; }
+dl.f-side-display:after { content: "."; height: 0; visibility: hidden; display: block; clear: both; margin-bottom: 10px; }
+
+dl.f-side-display {background:url(../images/gray_pix.gif) repeat-y 110px 0;}
+dl.f-side-display.large dt {padding:0 10px; width:90px;}
+dl.f-side-display.large dt .f-crop-it { width: 80px; height: 80px; }
+dl.f-side-display.large dt img { height: 80px; }
+dl.f-side-display.large dd { margin: 0 0 0 110px;} /* right shelve spacing */
+dl.f-side-display.large dt ul li {margin:0;} /* bottom shelve spacing */
+
+.f-details {font-size: 70%;}
+
+/*######################################################################
+///////////// CONTROLS AND NAVIGATION /////////////////////////////////////////////////////////////
+#####################################################################*/
+
+.f-control { padding: 10px 10px 10px 20px; float: left; margin:5px 0; }
+.f-control li {display: inline;}
+.f-control li .button1 {float: none;}
+
+/*######################################################################
+///////////// POST LAYOUT //////////////////////////////////////////////////////////////////////////////////////
+#####################################################################*/
+.f-post-header {min-height: 13px; background:#f4f4f4; padding:3px; font-size:80%; border-left: 1px solid #ddd; border-top: 1px solid #ddd; border-right: 1px solid #ddd;}
+.f-post-header .left {padding-left:15px;}
+.f-post-sub-header {height:20px;}
+.f-post-subject {float: left; padding:0 0 3px 10px; color: #999;}
+.f-report {float: right; padding-right:10px; font-size:80%;}
+
+.post-quote {border:1px solid #ddd; padding:0;margin:0;}
+.post-quote h5 {border-bottom:1px solid #ddd; padding:5px; background:#f4f4f4;}
+.quote-body {overflow: hidden;}
+
+#full-thread .ugc-body {padding:0 10px;}
+
+/*#############################################
+///////////// REPLY / QUOTES //////////////////////////////////////
+############################################*/
+
+.quote { outline:1px solid #ccc; margin:20px; padding:10px; }
+.quoted-poster { font-weight: bold; }

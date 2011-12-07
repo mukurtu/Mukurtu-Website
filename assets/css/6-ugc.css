@@ -1,0 +1,62 @@
+/* #+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+ BROWSWER DEFAULT STYLES FOR .ugc-body class #+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+ */
+
+.ugc-body html, .ugc-body address, .ugc-body blockquote, .ugc-body body, .ugc-body dd, .ugc-body div, .ugc-body dl, .ugc-body dt, .ugc-body fieldset, .ugc-body form, .ugc-body frame, .ugc-body frameset, .ugc-body h1, .ugc-body h2, .ugc-body h3, .ugc-body h4, .ugc-body h5, .ugc-body h6, .ugc-body noframes, .ugc-body ol, .ugc-body p, .ugc-body ul, .ugc-body center,
+.ugc-body dir, .ugc-body hr, .ugc-body menu, .ugc-body pre   { display: block }
+.ugc-body li { display: list-item }
+.ugc-body head { display: none }
+.ugc-body table { display: table }
+.ugc-body tr { display: table-row }
+.ugc-body thead { display: table-header-group }
+.ugc-body tbody { display: table-row-group }
+.ugc-body tfoot { display: table-footer-group }
+.ugc-body col { display: table-column }
+.ugc-body colgroup { display: table-column-group }
+.ugc-body td, th { display: table-cell }
+.ugc-body caption { display: table-caption }
+.ugc-body th { font-weight: bolder; text-align: center }
+.ugc-body caption { text-align: center }
+.ugc-body body { margin: 8px }
+.ugc-body h1 { font-size: 2em; margin: .67em 0 }
+.ugc-body h2 { font-size: 1.5em; margin: .75em 0 }
+.ugc-body h3 { font-size: 1.17em; margin: .83em 0 }
+.ugc-body h4, .ugc-body p, .ugc-body blockquote, .ugc-body ul, .ugc-body fieldset, .ugc-body form, .ugc-body ol, .ugc-body dl, .ugc-body dir, .ugc-body menu { margin: 1.12em 0 }
+.ugc-body h5 { font-size: .83em; margin: 1.5em 0 }
+.ugc-body h6 { font-size: .75em; margin: 1.67em 0 }
+.ugc-body h1, .ugc-body h2, .ugc-body h3, .ugc-body h4, .ugc-body h5, .ugc-body h6, .ugc-body b, .ugc-body strong { font-weight: bolder }
+.ugc-body blockquote { margin-left: 40px; margin-right: 40px }
+.ugc-body i, .ugc-body cite, .ugc-body em, .ugc-body var, .ugc-body address { font-style: italic }
+.ugc-body pre, .ugc-body tt, .ugc-body code, .ugc-body kbd, .ugc-body samp { font-family: monospace }
+.ugc-body pre { white-space: pre }
+.ugc-body button, .ugc-body textarea, .ugc-body input, .ugc-body select { display: inline-block }
+.ugc-body big { font-size: 1.17em }
+.ugc-body small, .ugc-body sub, .ugc-body sup { font-size: .83em }
+.ugc-body sub { vertical-align: sub }
+.ugc-body sup { vertical-align: super }
+.ugc-body table { border-spacing: 2px; }
+.ugc-body thead, .ugc-body tbody, .ugc-body tfoot { vertical-align: middle }
+.ugc-body td, .ugc-body th { vertical-align: inherit }
+.ugc-body s, .ugc-body strike, .ugc-body del  { text-decoration: line-through }
+.ugc-body hr { border: 1px inset }
+.ugc-body ol, .ugc-body ul, .ugc-body dir, .ugc-body menu, .ugc-body dd { margin-left: 40px }
+.ugc-body ol { list-style-type: decimal }
+.ugc-body ul { list-style: disc }
+.ugc-body ol ul, .ugc-body ul ol, .ugc-body ul ul, .ugc-body ol ol { margin-top: 0; margin-bottom: 0 }
+.ugc-body u, .ugc-body ins { text-decoration: underline }
+.ugc-body br:before { content: "\A" }
+:before, :after { white-space: pre-line }
+.ugc-body center { text-align: center }
+.ugc-body :link, .ugc-body :visited { text-decoration: underline }
+.ugc-body :focus { outline: thin dotted invert }
+
+/* Begin bidirectionality settings (do not change) */
+BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override }
+BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
+
+*[DIR="ltr"]    { direction: ltr; unicode-bidi: embed }
+*[DIR="rtl"]    { direction: rtl; unicode-bidi: embed }
+
+@media print {
+  .ugc-body h1 { page-break-before: always }
+  .ugc-body h1, .ugc-body h2, .ugc-body h3, .ugc-body h4, .ugc-body h5, .ugc-body h6    { page-break-after: avoid }
+  .ugc-body ul, .ugc-body ol, .ugc-body dl    { page-break-before: avoid }
+}

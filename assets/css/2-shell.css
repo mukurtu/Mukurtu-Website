@@ -1,0 +1,184 @@
+body {background: #b8946e url() repeat-x center top; }
+.wrap { background: transparent url(images/bg-body.png) repeat-y center; }
+.wrap-top { background: transparent url(images/page-top-bottom.png) center -8px no-repeat; height:50px; margin-top:-42px;}
+.wrap-bottom { background: transparent url(images/page-top-bottom.png) center -50px no-repeat; height:120px;}
+.page { width: 974px; overflow: hidden; margin:0 auto; /* sticky footer */ ppadding-bottom:80px; /* must be same height as the footer */ }
+
+/*############################################
+///////////// HEADER //////////////////////////////////////////////////
+############################################*/
+
+#header { width: 974px; margin: 0 auto; background:; /margin-top:10px; }
+
+#header #logo a { display:block; position:relative; /* required */
+width:101px; height: 101px; /height:105px; /* image dimensions */
+float:left; margin: 20px 0 20px 21px; /margin: 10px 0 0 21px; font-size:; color:#000;}
+#header #logo a span { position:absolute; /* required */
+width: 100%; height: 100%; /* stretch to parent */
+cursor:pointer;  /* ie sucks */
+background: url(images/logo.gif) no-repeat; /* image */}
+
+/*#################################################
+///////////// NAVIGATION MENUS ////////////////////////////////////////
+#################################################*/
+
+#header #main-menu { width:780px\9; height: 49px; float: right; margin-top: 55px; }
+#header #main-menu li { display: inline; color: #FFF; }
+#header #main-menu li a { color: #693601; font-weight: bold; font-size: 140%; display: block; float: left; padding:0 35px; padding:0 29px\9; }
+#header #main-menu li.first a { background:none; }
+#header #main-menu li.active a { color: #2891a0; }
+#header #main-menu li a:hover { text-decoration: none; }
+
+/* dropdown menu */
+#header #main-menu li ul { display: none; }
+
+
+#header ul#main-menu-list { width: 160px; border-right: 1px solid #754200; margin-bottom: 1em; font-family: 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif; font-size: 90%; background: #90bade; color: #333; }
+
+* html #main-menu-list{ /*IE 6 only */ w\idth: 127px; /*Box model bug: 160px minus all left and right paddings for #main-nav-list */ }
+#main-menu-list { margin-left:-5px; }
+#main-menu-list li { border-bottom: 1px solid #80ab00; margin: 0; }
+#main-menu-list li a { display: block; padding: 5px 5px 5px 8px; border-left: 10px solid #80ab00; border-right: 10px solid #a5dc00; background: #98cb00; color: #fff; text-decoration: none; width: 100%; }
+html>body #main-menu-list li a { /*Non IE6 width*/ width: auto; }
+#main-menu-list li a:hover { border-left: 10px solid #a5dc00; border-right: 10px solid #98cb00; background-color: #9ed300; color: #fff; }
+
+#main-menu-shadow { background: transparent url(images/main-menu-bg-shadow.png) repeat-x; position: absolute; height: 13px; width:974px; }
+
+#header #extra-menu {font-size: 90%; padding: 10px 10px 0 0; /padding:0 10px 0 0;}
+#header #extra-menu a {color:#fff;}
+
+/* Optional horizontal sub menu  */
+#header ul#sub-menu, #header div#sub-menu { padding: 5px 0; margin: 0 auto; background: #f4f4f4; text-align: center;  }
+#header ul#sub-menu { display: block; margin: 0 auto; }
+#header ul#sub-menu li { display: inline; font-size: 70%; /font-size:75%; border-right:; color: #3bb6d7; padding: 0 3px 0 3px; /padding: 0 1px 0 3px; }
+#header ul#sub-menu li.last { border-right: 0; }
+
+/* Drop Down Menu
+Style for main menu*/
+
+.chromestyle{ width: 100%;font-size: 90%;background:#f4f4f4; padding:5px 0;}
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.chromestyle ul{width: 100%;background:; /*THEME CHANGE HERE*/
+padding: 4px 0;margin: 0 0 0 40px;text-align: left; /*set value to "left", "center", or "right"*/}
+.chromestyle ul li{display: inline;padding: 4px 7px;}
+.chromestyle ul li a{color: #494949;margin: 0;text-decoration: none;}
+.chromestyle ul li a:hover, .chromestyle ul li a.selected{ /*script dynamically adds a class of "selected" to the current active menu item*/
+background:; /*THEME CHANGE HERE*/}
+
+/* Style for Drop Down Menu */
+
+.dropmenudiv{position:absolute;top: 0; /*THEME CHANGE HERE*/
+border-right:1px solid #ccc; border-bottom:1px solid #ccc;line-height:18px;z-index:100;background-color: #f4f4f4;width: 200px;visibility: hidden;
+filter: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4); /*Add Shadow in IE. Remove if desired*/}
+
+.dropmenudiv .add {background: url(images/add.gif) no-repeat 28px 5px; padding-left:40px;}
+.dropmenudiv a{width: auto;display: block;text-indent: 3px;border-bottom: 1px solid #eee; /*THEME CHANGE HERE*/
+padding: 2px 0 2px 15px;text-decoration: none;font-size:90%;color: black;}
+
+* html .dropmenudiv a{ /*IE only hack*/
+width: 100%;}
+
+.dropmenudiv a:hover{ /*THEME CHANGE HERE*/background-color: #ddd;}
+.dropmenudiv .add:hover {background: #ddd url(images/add.gif) no-repeat 28px -16px;}
+
+#home .v-menu { background: url(images/div-v.jpg) no-repeat; height: 280px; width: 330px; float: left; margin:0 0 60px 0; }
+#home .v-menu a { display: block; padding:20px 0 20px 20px; border-bottom: 1px solid #e4e1dc; font-weight: bold; font-size: 110% }
+#home .v-menu a:hover { text-decoration: none; color: #754200; }
+#home .v-menu .last a { border:none; }
+
+/*##############################################
+///////////// LOGIN PANE ///////////////////////////////////////////////
+##############################################*/
+
+#login-pane {display:none; position:absolute; left:550px; background:#ccc; width:260px; padding:10px; z-index:200;}
+
+
+/*#############################################
+///////////// FOOTER ///////////////////////////////////////////////////
+#############################################*/
+
+.footer-logo { width:947px; margin:0 auto; position:relative;}
+
+#footer { color:#fff; text-align: center; height: 80px; /* sticky footer */ position:relative; margin-top:-80px; clear:both; /**/ }
+#footer a { color: #fff; }
+#footer .footer-nav li { display: inline; font-size: 85%; border-right: 1px solid #fff; padding: 0 5px 0 5px; /padding: 0 4px 0 8px; }
+#footer .footer-nav li.last { border-right: 0; }
+
+/*#################################################
+///////////// CENTER COLUMNS //////////////////////////////////////////
+#################################################*/
+
+.column-full { width: 952px !important; float: left; padding: 0 10px 0 10px; overflow: hidden; } /* + skyscraper ad - padding is for the account pages*/
+.column-large { width: 784px; float: left; overflow: hidden; } /* + skyscraper ad */
+.column-medium { width: 624px; float: left; margin:25px 10px 0 0; overflow: hidden; /position: relative; /top: -20px; } /* + column300 */
+.column-center {width:614px; float:left; overflow: hidden;} /* center column for double skyscraper */
+.column-small { width: 454px; margin-right:10px;  float: left; overflow: hidden; } /* + column300 + skyscraper */
+.c-support { margin-right:0; } /* + column300 + skyscraper within column-medium */
+
+.margin-medium { padding: 0 0 0 10px; }
+.margin-large { padding-left: 10px; margin-left:10px; }
+.no-margin { margin:0; }
+
+/*###############################################
+///////////// SIDE COLUMNS ////////////////////////////////////////////
+###############################################*/
+
+.column-300 { width: 310px; float: left; overflow: hidden; margin:25px 0 0 0; /position: relative; /top: -20px; } /* 300x250 ad */
+.column-300s { width: 301px; float: left; overflow: hidden; background: url(images/div-v.jpg) 0 -120px no-repeat; } /* 300x250 ad */
+.column-300s.first { background: none; }
+.column-160 { width: 160px; float: left; overflow: hidden; } /* skyscraper */
+
+/*###################################################
+///////////// PAGE BACKGROUNDS ////////////////////////////////////////
+###################################################*/
+
+.column-bg0 { background: url(images/screen-bg.jpg) bottom repeat-x; width:975px; /* hack for misalignment */ }
+.column-bg1 { background: url(images/column-bg1.gif); width:972px; /* hack for misalignment */ }
+.column-bg2 { background: url(images/column-bg2.gif); width:972px; /* hack for misalignment */ }
+.column-bg3 { background: url(images/column-bg3.gif); width:972px; /* hack for misalignment */ }
+.column-bg4 { background: url(images/column-bg4.gif); width:972px; /* hack for misalignment */ }
+.column-bg5 { background: #fff; /* this is coupled with .column-full carefull when setting width */ }
+.column-bg6 { background: url(images/column-bg6.gif); width:972px; /* hack for misalignment */ }
+
+/*##############################################
+///////////// PAGE EXTRAS ////////////////////////////////////////////
+###############################################
+These next 8 divs are for an extra graphic if you need for top and bottom of the page. You can comment them out if you don't need them. */
+
+.column-top1 { display: none; }
+.column-top2 { display: none; }
+.column-top3 { display: none; }
+.column-top4 { display: none;  }
+
+.column-bottom1 { display: none; }
+.column-bottom2 { display: none; }
+.column-bottom3 { display: none; }
+.column-bottom4 { display: none; }
+
+/*#############################################
+///////////// MODULES /////////////////////////////////////////////////
+#############################################*/
+
+.column-small .module { float: left; width: 454px; }
+.column-medium .module { float: left; width: 624px; }
+.column-300 .module { float: left; width: 300px; }
+.column-160 .module { float: left; width: 160px; }
+.column-half {float:left; width:50%; /width:49%;}
+
+.module { margin: 8px 0; }
+.module-sub-header { margin: 10px 0 0 0; /margin: 0 0 0 0; }
+.module h2 { font-size: 160%; padding: 2px 2px 2px 10px; _margin:0 10px 0 0; }
+.module h3 { font-size: 100%; }
+.module h4 { margin:10px 0 0 0; }
+.module p, .module .no-bullet { margin: 10px 0 0 0; }
+.module .control-panel { margin-top:20px !important; }
+
+/*##############################################
+///////////// SUB HEADER //////////////////////////////////////////////
+##############################################*/
+
+.sub-header { margin: 10px 0 0 10px; /margin: 0 0 0 0; }
+.sub-header h1 { font-size: 160%; }
+.sub-header h1 span { font-weight: normal; }
+.sub-header p { text-align: justify; zoom:100%; }

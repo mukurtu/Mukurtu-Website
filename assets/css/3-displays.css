@@ -1,0 +1,474 @@
+/*######################################################################
+/////// WARNING! DO NOT ALTER - WARNING! DO NOT ALTER - WARNING! //////
+#####################################################################*/
+
+/* TOP THUMB LAYOUT */
+dl.top-display { display: block; position: relative; float: left; padding-top:10px; }
+dl.top-display dt, dl.top-display dt .crop-it { position: relative; /* for type-icon */ overflow: hidden; text-align: center; margin:0 auto; }
+dl.top-display dd { text-align: center; overflow:hidden; }
+
+/* SIDE DISPLAY LAYOUT */
+dl.side-display { display: block; /* position: relative; zoom: 1;*/  padding: 10px 0; /padding-bottom: 10px; overflow: hidden; }
+dl.side-display dt, dl.side-display dt .crop-it { position:relative; /* for type-icon */ overflow: hidden; text-align: center; float: left; }
+dl.side-display dt { font-weight: bold; }
+dl.side-display dd { }
+dl.side-display dd h3 { color:#542a01; margin-bottom: 10px; }
+dl.side-display dd h3 a { color:#542a01; font-size: 140%; }
+dl.side-display:after { content: "."; height: 0; visibility: hidden; display: block; clear: both; margin-bottom: 10px; }
+
+.module .side-display { margin-left:10px; }
+
+/* Hides from IE-mac \*/
+* html dl.side-display { height: 1%; }
+dl.side-display { display: block; }
+/* End hide from IE-mac */
+
+dl.side-display.righty dt {float:right; margin:0 0 15px 15px;}
+
+/* BULLET LAYOUT */
+
+.module ul.bullet, dl.side-display .bullet { padding: 0 0 0 40px; }
+dl.bullet { display: block; position: relative; padding:5px 0; }
+dl.bullet dt, dl.no-bullet dt { font-weight: bold; }
+ul.bullet li { list-style: none;  }
+ul.bullet-brown li { list-style-image: url(images/bullet-brown.png); padding:0 0 10px 0; }
+ul.bullet-blue li { list-style-image: url(images/bullet-blue.png); padding:0 0 10px 0; }
+
+.sub-bullet { padding: 0 0 0 20px; }
+ul.sub-bullet-blue li { list-style-image: url(images/bullet-sub-blue.png); padding:0 0 10px 0; }
+
+/* CONTROL PANEL - control-panel: aligns right, control-panel2: aligns left*/
+.control-panel, .control-panel2 { text-align: right; margin: 10px 0; _margin-right:10px; }
+.control-panel li, .control-panel2 li { display: inline; }
+.control-panel li { text-align: right; }
+.control-panel li span { }
+.control-panel li.no-button, .control-panel li.no-button2 { background: none !important; }
+
+.control-panel2, .control-panel2 li {text-align: left;}
+.control-panel2 {width: 100%;}
+
+.control-panel3 {margin-top:15px;}
+.control-panel3 li {display:inline;/* iesucks */}
+.control-panel3 li a { display:block; float:left; padding:0 10px; margin-right:4px; font-size:80%; /font-size:70%; background:#f4f4f4; }
+
+/* profile page controls for profile panel. also using properties from above */
+
+.profile-panel {margin:5px 0 5px 0; font-size:80%; /margin-top:-10px;}
+.profile-panel li {display:inline; margin-right:20px;}
+.profile-panel-link {font-size: 80%;}
+
+/*######################################################################
+/////// END WARNING! END WARNING! END WARNING! END WARNING! ///////////
+#####################################################################*/
+
+.display-case h2 { font-size: 180%; }
+.no-thumb { display:block; margin: 0 auto; overflow: auto; width: 110px; height: 82px; background: url(images/no-thumb.jpg); _margin-bottom: 10px; }
+
+/*######################################################################
+/////// CONTROLS TO SPLIT THE DISPLAYS FOR A 2 COLUMN LAYOUT //////////
+If the columns or padding changes this must be edited!
+#####################################################################*/
+
+.column-full .split,
+.column-large .split,
+.column-medium .split,
+.column-center .split,
+.column-small .split { float:left; margin-right:10px; overflow: hidden;}
+
+.column-full .split,
+.column-large .split,
+.column-medium .split,
+.column-center .split {width:48%; overflow: hidden;}
+.column-small .split {width:47%; overflow: hidden;}
+
+.column-small .triple {width:31%; overflow:hidden;}
+.column-center .triple {width:31.65%; overflow:hidden;}
+.column-medium .triple {width:31.68%; overflow:hidden;}
+.column-large .triple {width:32%; overflow:hidden;}
+.column-full .triple {width:32.25%; overflow:hidden;}
+
+.column-small .quad {width:23.31%; overflow:hidden;}
+.column-center .quad {width:23.31%; overflow:hidden;}
+.column-medium .quad {width:23.34%; overflow:hidden;}
+.column-large .quad {width:23.69%; overflow:hidden;}
+.column-full .quad {width:23.92%; overflow:hidden;}
+
+/*########################################################
+/////// FRAME FOR THE DISPLAYS BELOW //////////////////////////////////
+########################################################*/
+/* top-display */
+dl.top-display.wide dt,
+dl.top-display.wide-medium dt,
+dl.top-display.wide-small dt,
+dl.top-display.large dt,
+dl.top-display.medium dt,
+dl.top-display.small dt,
+dl.top-display.jumbo dt,
+
+/* side-display: using .frame-it in the markup <dt> for the ability to add bottom shelving -
+for bottom shelving use groups section threads in the library as reference */
+.frame-it,
+.update-item dd.avatar img,
+.update-item dd.pictures img,
+.update-item dd.videos img,
+.update-item dd.audio img {padding: 4px; border: 1px solid #d7c6b3; border-bottom-color: #c4b4a3; border-right-color: #c4b4a3; background: #fff;}
+
+.frame-it.full-video {width:610px; margin:0 auto;} /* for some reason this has to be used for the full video frame otherwise the width is too wide */
+
+/*##################################################
+/////// TOP DISPLAY LAYOUT ////////////////////////////////////////////
+#################################################*/
+
+#profile .top-display.jumbo {float:none; margin:0 auto;} /* used for 300 column */
+
+dl.top-display.jumbo {width:200px;} /* ie sucks - default setting do not edit */
+dl.top-display.jumbo dt { /* ie sucks */ width:200px; height:200px; /* ie sucks */ }
+dl.top-display.jumbo dt .crop-it {width:200px; height:200px;}
+dl.top-display.jumbo dt img { height: 200px; }
+dl.top-display.jumbo dd { margin:3px 0 0 0;height:18px; /* height for stars otherwise it will break the layout */ }
+
+dl.top-display.wide {width:120px;} /* ie sucks - default setting do not edit */
+dl.top-display.wide dt { /* ie sucks */ width:110px; height:82px; /* ie sucks */ }
+dl.top-display.wide dt .crop-it {width:110px; height:82px;}
+dl.top-display.wide dt img { height: 82px; }
+dl.top-display.wide dd { margin:3px 0 0 0;height:18px; /* height for stars otherwise it will break the layout */ }
+
+dl.top-display.wide-medium {width:90px;} /* ie sucks - default setting do not edit */
+dl.top-display.wide-medium dt { /* ie sucks */ width:80px; height:60px; /* ie sucks */ }
+dl.top-display.wide-medium dt .crop-it {width:80px; height:60px;}
+dl.top-display.wide-medium dt img { height: 60px; }
+dl.top-display.wide-medium dd { margin:3px 0 0 0;height:18px; /* height for stars otherwise it will break the layout */ }
+
+dl.top-display.wide-small {width:60px;} /* ie sucks - default setting do not edit */
+dl.top-display.wide-small dt { /* ie sucks */ width:50px; height:38px; /* ie sucks */ }
+dl.top-display.wide-small dt .crop-it {width:50px; height:38px;}
+dl.top-display.wide-small dt img { height: 38px; }
+dl.top-display.wide-small dd { margin:3px 0 0 0;height:18px; /* height for stars otherwise it will break the layout */ }
+
+dl.top-display.large {width:90px;} /* ie sucks - default setting do not edit - override for gutter see below */
+dl.top-display.large dt { /* ie sucks */ width:80px; height:80px; /* ie sucks */ }
+dl.top-display.large dt .crop-it {width:80px; height:80px;}
+dl.top-display.large dt img { height: 80px; }
+dl.top-display.large dd { margin:3px 0 0 0;height:18px; /* height for stars otherwise it will break the layout */ }
+
+dl.top-display.medium {width:80px;} /* ie sucks - default setting do not edit - override for gutter see below */
+dl.top-display.medium dt { /* ie sucks */ width:70px; height:70px; /* ie sucks */ }
+dl.top-display.medium dt .crop-it {width:70px; height:70px;}
+dl.top-display.medium dt img { height: 70px; }
+dl.top-display.medium dd { margin:3px 0 0 0;height:18px; /* height for stars otherwise it will break the layout */ }
+
+dl.top-display.small {width:60px;} /* ie sucks - default setting do not edit - override for gutter see below */
+dl.top-display.small dt { /* ie sucks */ width:50px; height:50px; /* ie sucks */ }
+dl.top-display.small dt .crop-it {width:50px; height:50px;}
+dl.top-display.small dt img { height: 50px; }
+dl.top-display.small dd { margin:3px 0 0 0;height:18px; /* height for stars otherwise it will break the layout */ }
+
+/*#####################################################################
+///////////// GUTTERS FOR TOP DISPLAYS ///////////////////////////////////////////////////////////
+If the columns or padding changes this must be edited!
+#####################################################################
+this will override the above to set gutter space - gutter space it set by the width to the <dl>*/
+
+/* column large */
+.column-large .top-display.wide {width:156px;} /* width set for left text justification of child indented below */
+		.column-large .top-display.wide  dd {text-align:left; width:120px; margin-left:18px;}
+.column-large .top-display.wide-medium {width:92px;margin: 0 10px;}
+.column-large .top-display.wide-small {width:68px;margin: 0 5px;}
+
+.column-large .top-display.large {width:110px;margin: 0 10px;}
+.column-large .top-display.medium {width:92px;margin: 0 10px;}
+.column-large .top-display.small {width:68px;margin: 0 5px;}
+
+/* column medium */
+.column-medium .top-display.wide {width:156px;} /* width set for left text justification of child indented below */
+		.column-medium .top-display.wide  dd {text-align:left; width:120px; margin-left:18px;}
+.column-medium .top-display.wide-medium {width:93px; margin: 0 5px;}
+.column-medium .top-display.wide-small {width:68px;margin: 0 5px;}
+
+.column-medium .top-display.large {width:104px;margin: 0 10px;}
+.column-medium .top-display.medium {width:84px;margin: 0 10px;}
+.column-medium .top-display.small {width:68px;margin: 0 5px;}
+
+/* column center */
+.column-center .top-display.wide {width:153px;} /* width set for left text justification of child indented below */
+		.column-center .top-display.wide  dd {text-align:left; width:120px; margin-left:17px;}
+.column-center .top-display.wide-medium {width:92px;margin: 0 5px;}
+.column-center .top-display.wide-small {width:66px;margin: 0 5px;}
+
+.column-center .top-display.large {width:102px;margin: 0 10px;}
+.column-center .top-display.medium {width:82px;margin: 0 10px;}
+.column-center .top-display.small {width:66px;margin: 0 5px;}
+
+/* column small */
+.column-small .top-display.wide {width:144px;} /* width set for left text justification of child indented below */
+		.column-small .top-display.wide  dd {text-align:left; width:120px; margin-left:16px;}
+.column-small .top-display.wide-medium {width:93px;margin: 0 10px;}
+.column-small .top-display.wide-small {width:65px;margin: 0 5px;}
+
+.column-small .top-display.large {width:93px;margin: 0 10px;}
+.column-small .top-display.medium {width:80px;margin: 0 5px;}
+.column-small .top-display.small {width:65px;margin: 0 5px;}
+
+/* side columns */
+.column-300 .top-display.wide {width:140px;margin: 0 5px;}
+.column-300 .top-display.wide-medium {width:90px;margin:0 5px;}
+.column-300 .top-display.large {width:90px;margin: 0 5px;}
+.column-300 .top-display.medium {width:90px;margin: 0 5px;}
+.column-300 .top-display.wide-small,
+.column-300 .top-display.small {width:65px;margin: 0 5px;}
+
+.column-300s .top-display.wide {width:140px;margin: 0 5px;}
+.column-300s .top-display.wide-medium {width:90px;margin:0 5px;}
+.column-300s .top-display.large {width:90px;margin: 0 5px;}
+.column-300s .top-display.medium {width:90px;margin: 0 5px;}
+.column-300s .top-display.wide-small,
+.column-300s .top-display.small {width:65px;margin: 0 5px;}
+
+.column-160 .top-display.wide,
+.column-160 .top-display.wide-medium,
+.column-160 .top-display.large,
+.column-160 .top-display.medium {width:160px;}
+.column-160 .top-display.wide-small,
+.column-160 .top-display.small {width:70px;margin: 0 5px;}
+
+/* manage pages - width set to accomodate the check box */
+
+/* #manage-buddies .display-case,
+#manage-images .display-case,
+#manage-video .display-case,
+#manage-audio .display-case,
+#manage-favorites.display-case {padding-top:20px; /padding:5px;} /* adding top padding so it's not so close to the sub-header */
+
+.top-display.manage {padding-top:0; padding-bottom:20px;} /* remove top padding to accomodate the check box */
+
+.column-full .top-display.manage {width:175px; /width:165px;}
+
+.column-large .top-display.manage {width:162px; /width:156px;}
+
+.column-medium .top-display.wide.manage {width:192px; /width:187px;}
+	.column-medium .top-display.wide.manage dd {margin-left:36px;/margin-left:32px;}
+.column-medium .top-display.wide-medium.manage,
+.column-medium .top-display.wide-small.manage,
+.column-medium .top-display.small.manage {width:183px; /width:178px;}
+.column-medium .top-display.large.manage,
+.column-medium .top-display.medium.manage {width:174px; /width:168px;}
+
+.column-center .top-display.wide.manage {width:189px; /width:184px;}
+	.column-center .top-display.wide.manage dd {margin-left:35px; /margin-left:32px;}
+.column-center .top-display.wide-medium.manage,
+.column-center .top-display.wide-small.manage,
+.column-center .top-display.small.manage {width:180px; /width:174px;}
+.column-center .top-display.large.manage,
+.column-center .top-display.medium.manage {width:171px; /width:164px;}
+
+.column-small .top-display.wide.manage {width:210px; /width:205px;}
+	.column-small .top-display.wide.manage dd {margin-left:45px; /margin-left:43px;}
+.column-small .top-display.wide-medium.manage,
+.column-small .top-display.large.manage{width:194px; /width:187px;}
+.column-small .top-display.wide-small.manage,
+.column-small .top-display.medium.manage,
+.column-small .top-display.small.manage {width:127px; /width:120px;}
+
+
+
+
+
+
+
+/*##################################################
+/////// SIDE DISPLAY LAYOUT ///////////////////////////////////////////
+###################################################
+for bottom shelving use groups section threads in the library as reference*/
+
+/* .info mainly used in user profile and group profile */
+dl.side-display.info {border-bottom: 1px dashed #ccc; margin-bottom: 20px;}
+dl.side-display.info dt .crop-it { width: 200px; /* max-height:200px;  height is set to prevent tall images */ }
+dl.side-display.info dt img { width: 200px; }
+dl.side-display.info dd { margin: 0 0 0 220px; } /* right shelve spacing */
+dl.side-display.info dt ul li {margin:0 0 5px 0;} /* bottom shelve spacing */
+
+dl.side-display.wide dt .crop-it { width: 110px; height: 82px; }
+dl.side-display.wide dt img { height: 82px; }
+dl.side-display.wide dd { margin: 0 0 0 128px; } /* right shelve spacing */
+dl.side-display.wide dt ul li {margin:0 0 5px 0;} /* bottom shelve spacing */
+
+dl.side-display.wide-medium dt .crop-it { width: 80px; height: 60px; }
+dl.side-display.wide-medium dt img { height: 60px; }
+dl.side-display.wide-medium dd { margin: 0 0 0 98px; } /* right shelve spacing */
+dl.side-display.wide-medium dt ul li {margin:0 0 5px 0;} /* bottom shelve spacing */
+
+dl.side-display.wide-small dt .crop-it { width: 50px; height: 38px; }
+dl.side-display.wide-small dt img { height: 38px; }
+dl.side-display.wide-small dd { margin: 0 0 0 68px; } /* right shelve spacing */
+dl.side-display.wide-small dt ul li {margin:0 0 5px 0;} /* bottom shelve spacing */
+
+dl.side-display.large dt .crop-it { width: 80px; height: 80px; }
+dl.side-display.large dt img { height: 80px; }
+dl.side-display.large dd { margin: 0 0 0 98px; } /* right shelve spacing */
+dl.side-display.large dt ul li {margin:0 0 5px 0;} /* bottom shelve spacing */
+
+dl.side-display.medium dt .crop-it { width: 70px; height: 70px; }
+dl.side-display.medium dt img { height: 70px; }
+dl.side-display.medium dd { margin: 0 0 0 88px; } /* right shelve spacing */
+dl.side-display.medium dt ul li {margin:0 0 5px 0;} /* bottom shelve spacing */
+
+dl.side-display.small dt .crop-it { width: 50px; height: 50px; }
+dl.side-display.small dt img { height: 50px; }
+dl.side-display.small dd { margin: 0 0 0 68px; } /* right shelve spacing */
+dl.side-display.small dt ul li {margin:0 0 5px 0;} /* bottom shelve spacing */
+
+dl.side-display.mini {margin:3px 0 3px 62px; background:#f5f5f5;padding:5px;}
+dl.side-display.mini dt .crop-it { width: 30px; height: 30px; }
+dl.side-display.mini dt img { height: 30px; }
+dl.side-display.mini dd { margin: 0 0 0 45px; } /* right shelve spacing */
+dl.side-display.mini dt ul li {margin:0 0 5px 0;} /* bottom shelve spacing */
+
+dl.side-display.feed { padding: 10px 0 0 0; } /* override default padding */
+dl.side-display.feed dt .crop-it { width: 50px; height: 50px; }
+dl.side-display.feed dt .crop-it img { height: 50px; }
+dl.side-display.feed dd { color:#888; margin: 0 0 4px 68px; } /* bottom shelve spacing */
+dl.side-display.feed dd img { height: 75px; }
+dl.side-display.feed dd.item-separator { margin:0 !important; } /* override default */
+dl.side-display.feed:after { margin-bottom:0; } /* override default */
+
+dl.side-display.feed.admin .crop-it { background: url(images/avatars/admin-small.jpg) no-repeat; }
+
+/*######################################################
+/////// GUTTERS FOR SIDE DISPLAYS /////////////////////////////////////
+If the columns or padding changes this must be edited!
+#######################################################
+this will override the above to set gutter space*/
+
+/* featured video */
+dl.side-display.jumbo dt {width:auto; height:auto;}
+dl.side-display.jumbo dd {margin:0 0 0 315px;}
+#home dl.side-display.jumbo dd { margin:0 0 0 332px; }
+
+/* manage pages - shelve margin to accomodate the check box */
+dl.side-display.wide.manage dd {margin:0 0 0 152px !important; /margin:0 0 0 158px!important;} /* shelve spacing to accomodate the checkbox */
+
+dl.side-display.wide-medium.manage dd {margin:0 0 0 123px !important; /margin:0 0 0 130px!important;} /* shelve spacing to accomodate the checkbox */
+
+dl.side-display.wide-small.manage dd {margin:0 0 0 92px !important; /margin:0 0 0 100px!important;} /* shelve spacing to accomodate the checkbox */
+
+dl.side-display.large.manage dd {margin:0 0 0 123px !important; /margin:0 0 0 130px!important;} /* shelve spacing to accomodate the checkbox */
+
+dl.side-display.medium.manage dd {margin:0 0 0 111px !important; /margin:0 0 0 120px!important;} /* shelve spacing to accomodate the checkbox */
+
+dl.side-display.small.manage dd {margin:0 0 0 92px !important; /margin:0 0 0 100px!important;} /* shelve spacing to accomodate the checkbox */
+
+dl.side-display.manage .left {margin-right:10px;} /* margin for checkbox */
+
+dl.side-display.righty dd {margin-left:0;}
+
+/*################################################
+/////// BULLET LAYOUT /////////////////////////////////////////////////
+###############################################*/
+
+dl.bullet h3 { font-size:100%; font-weight: normal; padding: 3px 0 0 25px; } /* size of the bullet image + some spacing. had to use h3. dt won't work on ff */
+dl.bullet h3 { background: url(images/bullet.png) 10px 8px no-repeat; } /* set the bullet image + fine tunning on the position. had to use h3. dt won't work on ff */
+dl.bullet dd { margin: 0 0 0 25px; } /* This is the spacing of the sub-items. Size of the bullet image + some spacing */
+
+/*################################################
+/////// CONTROL PANEL /////////////////////////////////////////////////
+################################################*/
+
+.control-panel li { background: url() 2px 7px no-repeat; padding: 0 0 0 15px; } /* button for seperating options on the control panel */
+.control-panel li.no-bullet, .control-panel2 li.no-bullet { background: none; }
+
+.center-controls {padding:10px; text-align: center;}
+
+/* to set the triangle bullet in the control panel */
+#bulletins .control-panel li,
+#blogs .control-panel li,
+#groups .control-panel li,
+#videos .control-panel li,
+#albums .control-panel li,
+#images .control-panel li,
+#submits .control-panel li,
+#friends .control-panel li,
+#audio .control-panel li,
+#events .control-panel li,
+#updates .control-panel li,
+#threads .control-panel li {background:url(/mini/bd_nextpage.png) no-repeat 0 1px; margin-left:10px; }
+
+/*################################################
+/////// SUBMIT DISPLAY ////////////////////////////////////////////////
+################################################*/
+
+/* counter */
+.submit-props { width: 45px; text-align: center; margin: 0; padding: 0; list-style: none; font-size:80%; }
+.props-count a { display: block; padding: 0.5em 0; text-decoration: none; margin-bottom: 0; }
+.props-count a:hover { color: #3C3508; }
+.props-count a:visited { color: #754200; }
+.submit-props li { border: 1px solid #fff; /* fixes IE margin bug */ margin: 0; padding: 0; }
+.props-number { font-size: 200%; }
+.shade-5 { background: #FFF299 url(images/shade_5.gif); }
+.shade-5 a { background: url(images/shade_5.gif) bottom right; color: #754200; }
+.shade-5 strong { color: #50470D; display: block; }
+* html .shade-5 { background-position: 1px 1px; }
+li.give-props {}
+li.give-props a {display:block; border: 1px solid #eee; margin-top:5px;}
+li.give-props a:visited {display:block; border: 1px solid #eee; margin-top:5px; color: #ccc; }
+
+/* display */
+dl.ec-display {padding:10px 0;}
+dl.ec-display dd.left { float: left; width: 45px; min-height:30px;/* to add spacing when image is not present in ff */ text-align: center; }
+dl.ec-display dd.middle { float: left; width:; text-align: center; }
+dl.ec-display dd.middle img {width:75px;}
+dl.ec-display dd.shelves { margin-left:140px;}
+dl.ec-display.short dd.shelves { margin-left:53px;}
+dl.ec-display dd div.thumbnail {  overflow: hidden; text-align: center; margin-left:10px; }
+dl.ec-display dd div.thumbnail img {  }
+dl.ec-display dd p { /* height: 70px; */ overflow: hidden; }
+dl.ec-display dd.left span.points { display: block; margin: 0 auto; border: 1px solid #DADDCC; width: 70px; }
+dl.ec-display dd.left a.loveit {  background: url(images/button1-left.jpg) left no-repeat; padding: 0 0 0 8px; color: #FFF;}
+dl.ec-display dd.left a.loveit span { background: url(images/button1-right.jpg) right no-repeat; padding: 0 8px 0 0px; }
+dl.ec-display dd.left a:visited.loveit span { color: #754200; }
+
+/*################################################
+/////// BATTLE DISPLAY ////////////////////////////////////////////////
+################################################*/
+
+/* battle listing */
+.battle-item { float: left; width: 45%; padding: 9px; border: 1px solid #EEEEEE; margin: 0 15px 15px 0; } /* Added 45% width to help IE along */
+.battle-item dd { text-align: center; margin: 3px 0; }
+.battle-item dd .vs { float: left; height: 102px; line-height: 102px; width: 28px; _width: 30px; /* Fixes the box-model difference */ text-align: center; font-size: 120%; font-weight: bold; }
+.battle-item dd .friend-item dt { width: 150px !important;}
+.battle-item dd .friend-item dd { width: 150px; }
+
+/* battle view */
+.battle-info {text-align: center;}
+.battle-full-view-challenger { float: left; width: 320px;}
+.battle-full-view-challenger .imagecontainer { width: 310px;/* 10px less to compensate for frame-it */ }
+
+.battle-full-view-vs {  float: left; width: 129px;  text-align: center; font-size: 240%; font-weight: bold; }
+
+.battle-full-view-rival {  float: left; width: 320px; }
+.battle-full-view-rival .imagecontainer { width: 310px;/* 10px less to compensate for frame-it */ }
+
+/* battle challenge page */
+#battle-choose-challenge, #battle-challengers, #battle-options { margin: 10px; border: 1px solid #fff; padding: 3px; }
+#battle-choose-challenge img {padding:5px;border:2px solid #fff;}
+#battle-choose-challenge img:hover {border: 2px #98cb00 solid; cursor: pointer;}
+#battle-choose-challenge h2, #battle-challengers h2, #battle-options h2 { margin: 5px 0 15px 0; font-weight:bold; border-bottom: 1px solid #fff; padding-bottom: 5px; }
+.battle-full-view-challenger li, .battle-full-view-rival li {margin-bottom:10px;}
+#challenger1 { float: left; width: 49%; margin-right: 10px; }
+#challenger2 { width: 49%; float: left; }
+#challenger1, #challenger2 { border: 1px solid #fff; }
+#challenger1 img, #challenger2 img {width:455px;}
+#challenger1 h3, #challenger2 h3 { border: none; background: #f4f4f4; text-align: center; padding: 2px; margin-bottom: 2px; margin-left: 0; }
+
+#battle-options1, #battle-options2 { width: 50%; float: left;color:#fff;font-size:11px; }
+
+.wager-boxes { font-size: 85%; }
+.wager-boxes input { width: 80px; }
+
+/*##############################################
+/////// DIRECTORY /////////////////////////////////////////////////////
+##############################################*/
+
+dl.console dt { width: 45%; text-align: left; }
+dl.console dd { width:40%; margin:0 0 0 50%; }
+
+

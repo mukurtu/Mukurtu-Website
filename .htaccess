@@ -1,0 +1,6 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^wiki/?(.*)$ /wiki/index.php?title=$1 [L,QSA]
+
+redirect 301 /download.html http://www.mukurtu.org/get-mukurtu.html

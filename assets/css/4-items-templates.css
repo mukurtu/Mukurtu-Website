@@ -1,0 +1,114 @@
+.media-full-view-container,
+#edit-image-info { text-align: center; }
+
+/*######################################################################
+///////////// PEOPLE ITEM - THIS RELATES TO .MEDIUM-THUMB ///////////////////////////
+#####################################################################*/
+
+dl.people-item { width: 190px; height: 90px; /*overflow: visible;*/ float: left; background: #f8f8f8; padding: 3px; border-bottom: none; margin: 5px; _margin: 4px; overflow: hidden; }
+dl.people-item dt {margin:5px 0 0 5px;}
+dl.people-item dd {margin:0 0 0 94px !important;}
+
+/*######################################################################
+///////////// OWNER /////////////////////////////////////////////////////////////////////////////////////////////////
+#####################################################################*/
+
+.column-160 dl.owner { margin:40px 0 10px 0;}
+
+/*######################################################################
+///////////// LIST MENU ////////////////////////////////////////////////////////////////////////////////////////////
+#####################################################################*/
+
+ul.list-menu li.title {text-align: center;}
+ul.list-menu li.title h5, ul.list-menu li.title h5 a { margin:10px; padding:5px; background: #f9f9f9;}
+ul.list-menu li { border-bottom: 1px solid #D1EEEF;padding:2px 0; }
+ul.list-menu li a {display:block; padding:10px 0 10px 15px; }
+ul.list-menu li a:hover {background:#f4f4f4; text-decoration:none;}
+
+ul.list-menu li.new-message a {border:1px solid #fcb644;}
+
+#summary-notifications {border-bottom:5px solid #e8e8e8;}
+
+/*######################################################################
+///////////// ACCOUNT UPDATES ////////////////////////////////////////////////////////////////////////////
+#####################################################################*/
+
+.update-item .media-update { width: 34px; height: 34px;  margin: 0 4px 0 0; }
+.update-item .media-update img { height: 34px; }
+.update-item {background: url(images/update_bg.gif) repeat-x bottom;border:1px solid #eee;margin-bottom:5px;}
+.update-item span { font-weight: bold; }
+.update-item dd { font-size: 90%; margin: 0 !important; }
+.update-item dt { float: left; padding-left:10px; }
+
+.update-item dd.pictures img,
+.update-item dd.videos img,
+.update-item dd.audio img{margin-right:5px;}
+
+.update-item dd.events { background: url(/mini/f/calendar_add.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.hp_comment { background: url(/mini/f/user_comment.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.buddies_request { background: url(/mini/f/user_add.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.homepage { background: url(/mini/f/page_white_world.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.blog { background: url(/mini/f/script_edit.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.pictures { background: url(/mini/f/picture.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.audio { background: url(/mini/f/music.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.battles_challenge { background: url(/mini/f/battles_challenge.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.buddies { background: url(/mini/f/group_add.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.albums { background: url(/mini/f/images.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.videos { background: url(/mini/f/film.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.sounds { background: url(/mini/f/music.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.bulletins { background: url(/mini/f/note_edit.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.views { background: url(/mini/f/emoticon_tongue.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.awards { background: url(/mini/f/award_star_bronze_1.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.submit { background: url(/mini/f/arrow_branch.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.bday { background: url(/mini/f/cake.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.request { background: url(/mini/f/request.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.article { background: url(/mini/f/article.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.gallery { background: url(/mini/f/gallery.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.classifieds { background: url(/mini/f/money_dollar.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.joined { background: url(/mini/f/star.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.status { background: url(/mini/f/tag_green.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.thread { background: url(/mini/f/comments_add.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.group_invite { background: url(/mini/f/comments.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.group_join { background: url(/mini/f/user_add.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.buddies_reject { background: url(/mini/buddies_reject.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.buddies_nomore { background: url(/mini/f/user_red.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.buddies_accepted { background: url(/mini/f/buddies_accepted.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.event_register { background: url(/mini/f/sport_raquet.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.avatar { background: url(/mini/f/avatar.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.award_received { background: url(/mini/f/award_received.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.messages { background: url(/mini/f/messages.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.group_bulletin { background: url(/mini/f/group_bulletin.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.post { background: url(/mini/f/post.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.battles_loser { background: url(/mini/f/battles_loser.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.battles_tie { background: url(/mini/f/battles_tie.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+.update-item dd.battles_winner { background: url(/mini/f/battles_winner.gif) no-repeat 60px 10px; padding: 0 0 0 80px; }
+
+/*######################################################################
+///////////// COMMENTING FORM ///////////////////////////////////////////////////////////////////////////
+#####################################################################*/
+
+.commenting { width: 98%; }
+.commenting fieldset { margin: 10px 5px; border: 1px solid #999999; padding: 8px; }
+.commenting legend { margin-left: 6px; font-size: 115%; font-weight: bold; color: #98cb00; }
+
+
+/*######################################################################
+///////////// PEOPLE SEARCH FORM //////////////////////////////////////////////////////////////////////
+#####################################################################*/
+
+#people-search-form { }
+#people-search-form fieldset { border: 0; float: left; padding: 10px; margin: 0 10px 10px 0; /margin:0; }
+#people-search-form fieldset legend { font-size: 110%; font-weight: bold; color: #98cb00; /margin-left:-10px;}
+#people-search-form #people-search-lifestyle {  }
+#people-search-form #people-search-personalinfo,
+#people-search-form #people-search-loactedwithin { background-color: #f2f2f2; clear: both; }
+#people-search-form #people-search-lifestyle span,
+#people-search-form #people-search-personalinfo span,
+#people-search-form #people-search-loactedwithin span { display: block; padding: 10px; font-weight: bold; font-size: 110%; color: #3bb6d7; }
+#people-search-form #search-submit { clear: both; }
+
+/*######################################################################
+///////////// MISC SEARCH //////////////////////////////////////////////////////////////////////////////////////
+#####################################################################*/
+
+.video-edit-field {width:475px; /width:450px}
